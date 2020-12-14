@@ -1,0 +1,4 @@
+# 12. Запустите контейнер mysql в качестве фоновой задачи. Он должен иметь возможность перезапускаться самостоятельно в случае ошибки, а пароль root базы данных должен быть Kerrigan. Вы также убедитесь, что база данных хранится в томе инкубатория, что контейнер напрямую создает базу данных с именем zerglings, а сам контейнер называется spawning-pool. 
+
+docker pull mysql 
+docker run --name spawning-pool --restart on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql -d mysql

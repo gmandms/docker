@@ -1,0 +1,3 @@
+# 23. Создайте внутреннюю сеть overlay типа, которую вы назовете overmind.
+
+docker network create --driver=overlay overmind

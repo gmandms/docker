@@ -1,0 +1,6 @@
+# 19. Запустите контейнер с именем Abathur. Это будет контейнер Python, версия 2-slim, его / корневая папка будет привязана к папке HOME на вашем хосте, а его порт 3000 будет привязан к порту 3000 вашей виртуальной машины. Вы персонализируете этот контейнер, чтобы вы могли использовать микросхему Flask в последней версии. Вы убедитесь, что Flask может обслуживать html-страницу, отображающую «Hello World» с тегами <h1>. Вы проверите, правильно ли настроен ваш контейнер, получив доступ через curl или веб-браузер к IP-адресу вашей виртуальной машины на порту 3000. Вы также перечислите все необходимые команды в своем репозитории.
+
+docker run --d -it --name Abathur -v $HOME:/root --publish 3000:3000 python:2-slim
+docker exec Abathur pip install --upgrade pip
+docker exec Abathur pip install Flask
+echo -e 'from flask import Flask\napp = Flask(__name__)\n@app.route('\''/'\'')\ndef hello_world():\n\treturn '\''<h1>Hello, World!</h1>'\''' > $HOME/hello-world.py docker exec -e FLASK_APP=/root/hello-world.py Abathur flask run --host=0.0.0.0 --port 3000

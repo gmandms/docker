@@ -1,0 +1,4 @@
+# 15. Запустите контейнер phpmyadmin в качестве фоновой задачи. Он должен называться roach-warden, его порт 80 должен быть привязан к порту 8081 виртуальной машины, и он должен иметь возможность исследовать базу данных, хранящуюся в контейнере spawning-pool.
+
+docker pull phpmyadmin
+docker run -d --name roach-warden --publish 8081:80 -e PMA_HOST=spawning-pool phpmyadmin

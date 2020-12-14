@@ -1,0 +1,3 @@
+# 26. Запустите службу 42school/engineering-bay в двух точках и убедитесь, что служба работает правильно (см. Документацию на сайте hub.docker.com). Эта услуга будет называться Engineering-bay и будет находиться в overmind сети.
+
+docker service create --name engineering-bay --replicas 2 --network overmind -e OC_USERNAME=user -e OC_PASSWD=password 42school/engineering-bay

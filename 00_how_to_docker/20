@@ -1,0 +1,3 @@
+# 20. Создайте локальный swarm, его менеджером должна быть виртуальная машина Char.
+
+docker swarm init --advertise-addr $(docker-machine ip Char)

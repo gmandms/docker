@@ -1,0 +1,3 @@
+# 29. Отображение всех задач marines службы.
+
+docker service ps marines

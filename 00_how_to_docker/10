@@ -1,0 +1,3 @@
+# 10. Создайте том под названием hatchery.
+
+docker volume create --name hatchery

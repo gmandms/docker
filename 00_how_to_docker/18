@@ -1,0 +1,3 @@
+# 18. Перезапустите контейнер overlord.
+
+docker restart overlord

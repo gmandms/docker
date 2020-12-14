@@ -1,0 +1,3 @@
+# 1. Создайте виртуальную машину с docker-machine с помощью драйвера virtualbox и назовите Char. 
+
+docker-machine create --driver virtualbox Char

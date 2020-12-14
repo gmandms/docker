@@ -1,0 +1,3 @@
+# 7. Получите внутренний IP-адрес контейнера overlord без запуска его оболочки и одной командой.
+
+docker inspect --format '{{ .NetworkSettings.IPAddress}}' overlord

@@ -1,0 +1,2 @@
+# 24. Запустите СЕРВИС rabbitmq, который будет называться orbital-command. Вы должны определить конкретного пользователя и пароль для службы RabbitMQ, они могут быть какими угодно. Эта услуга будет в overmind сети.
+docker service create -d --name orbital-command --network overmind -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq

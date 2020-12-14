@@ -1,0 +1,3 @@
+# 22. Превратите Айура в раба местного swarm, в котором Char является лидером (команда взять под контроль Айур не запрашивается).
+
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token --quiet worker) $(docker-machine ip Char):2377"

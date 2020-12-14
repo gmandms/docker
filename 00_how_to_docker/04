@@ -1,0 +1,3 @@
+# 4. Получите контейнер hello-world в Docker Hub, где он доступен.
+
+docker pull hello-world

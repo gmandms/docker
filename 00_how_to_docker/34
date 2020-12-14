@@ -1,0 +1,3 @@
+34. Удалите виртуальную машину Aiur без использования rm -rf.
+
+docker-machine rm Aiur

@@ -1,0 +1,3 @@
+# 2. Получите IP-адрес виртуальной машины Char.
+
+docker-machine ip Char
